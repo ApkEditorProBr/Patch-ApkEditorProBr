@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt" class="translated-ltr">
+<head>
+<meta name="viewport" content="user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<body class="html">
+</head>
+    <!-- meu css -->
+    <link href="css/patches.css" rel="stylesheet">
+</head>
+<body>
+<div class="content">
+	<center>
+<h4>AMOSTRA DE CÓDIGO</h4>
+</center>
+<br></br>
+
+<Center>
+  <button type="button" class="cx">ADICIONAR ARQUIVO</button>
+<textarea class="cd" readonly onKeyPress="txtLog_OnKeyPress(event)"
+>
+
+
+
+[ADD_FILES]
+SOURCE:
+exemplo.xml
+TARGET:
+    res/raw-pt/exemplo.xml
+[/ADD_FILES]
+</textarea>
+<br>
+</br>
+
+<center>
+<button type="button" class="cx">EXCLUIR ARQUIVO</button>
+
+<textarea class="cd" readonly onKeyPress="txtLog_OnKeyPress(event)">
+
+
+
+
+[REMOVE_FILES]
+TARGET:
+    assets/exemplo3.xml
+[/REMOVE_FILES]
+</textarea>
+<center>
+<br>
+</br>
+
+<center>
+<button type="button" class="cx">SUBSTITUIÇÃO INTERNA</button>
+<textarea class="cd" readonly onKeyPress="txtLog_OnKeyPress(event)">
+
+[MATCH_REPLACE]
+TARGET:
+    smali/Code$1.smali
+MATCH:
+accessFlags = 0x1008
+REGEX:
+    true
+REPLACE:
+accessFlags = 0x0
+[/MATCH_REPLACE]
+</textarea>
+</center>
+<br>
+</br>
+
+<Center>
+<button type="button" class="cx">ALTERAR CORES</button>
+<textarea class="cd" readonly onKeyPress="txtLog_OnKeyPress(event)">
+
+[MATCH_REPLACE]
+TARGET:
+    res/*
+MATCH:
+#4cffffff
+REGEX:
+    true
+REPLACE:
+#ffff6b80
+[/MATCH_REPLACE]
+</textarea>
+</center>
+</br>
+</br>
+
+    <i><li>Depois de copiar o código, gere um arquivo chamado "patch" de extensão ".txt"</li></i>
+<br>
+</br>
+
+<i><li>Após criar o arquivo patch.txt, cole o código dentro do arquivo patch.txt</li></i>
+<br></br>
+
+<i><li>Depois de colar o código, compacta o arquivo "patch.txt" em um arquivo .zip, somente depois disso você poderá executar o patch no apk editor pro</li></i>
+<br></br>
+</div><script Language="Javascript">
+var coll = document.getElementsByClassName("cx");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+//Lidar com teclas pressionadas.
+function txtLog_OnKeyPress() {
+{ 
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+	font-size: 25px;
+}
+.collapsible {
+  color: gold;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: #28649C;
+}
+
+.content {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  height: none;
+  border: 1px solid;
+  
+}
+.texto_verde {
+	color: #188038;
+}
+
+.texto_roxo {
+	color: #AD67EC;
+}
+
+.texto_azul {
+    color: #3F51B5;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+b, button {
+	font-size: 25px;
+    font-family: "Gill Sans", sans-serif; 
+}
+.cx {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 10px 10px  10px  10px;
+  background-color: white;
+  color: none;
+  cursor: none;
+  padding: 18px;
+  width: 98%;
+  text-align: left;
+  outline: none;
+  padding-right: 8px;
+}
+.active, .cx:hover {
+  background-color: none;
+  border-radius: 10px 10px  0px  0px; 
+}
+
+.cd {
+  border-radius: 0px 0px  10px  10px; 
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  font-size: 20px;
+  outline: none;
+  background-color: white;
+  border: 2px solid black;
+  width: 98%;
+  height: 300px;
+}

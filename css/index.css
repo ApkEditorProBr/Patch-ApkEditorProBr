@@ -36,10 +36,11 @@ body {
 a {
   color: black;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 32px;
   
 }
 b, button {
     font-size: 25px;
     font-family: "Gill Sans", sans-serif; 
+
 }
